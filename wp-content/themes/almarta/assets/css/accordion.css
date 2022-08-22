@@ -1,0 +1,41 @@
+.accordion {
+  position: relative;
+  box-shadow: 5px 5px 6px rgb(0 0 0 / 30%);
+  background-color: #eaeaea;
+  padding: 20px 20px 20px 60px;
+  margin: 8px 0;
+}
+
+.accordion .head {
+  color: #7E1615;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.accordion .head:before {
+  content: "+";
+  position: absolute;
+  padding: 3px 8px;
+  border: 1px solid #7E1615;
+  border-radius: 50%;
+  left: -40px;
+  text-align: center;
+}
+.accordion .head.active:before {
+  content: "–";
+}
+
+.accordion .head:hover, .accordion .active {
+  background-color: #eaeaea;
+}
+
+.accordion .content {
+  background-color: #eaeaea;
+  display: none;
+  color: #757575;
+  margin-top: 10px;
+}
